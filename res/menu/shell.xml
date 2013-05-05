@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_whoami"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="whoami"/>
+    <item
+        android:id="@+id/action_su_whoami"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="su_whoami"/>
+    <item
+        android:id="@+id/action_wifi"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="wifi"/>
+    <item
+        android:id="@+id/action_su_wifi"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="su_wifi"/>
+
+</menu>
