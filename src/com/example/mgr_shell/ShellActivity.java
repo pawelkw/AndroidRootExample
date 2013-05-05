@@ -75,6 +75,7 @@ public class ShellActivity extends Activity {
 		switch (command) {
 		case WHOAMI:
 			process = runSimpleCommand(COMMAND_WHOAMI);
+			break;
 		case SU_WHOAMI:
 			process = runRootCommand(COMMAND_WHOAMI);
 			break;
