@@ -38,13 +38,13 @@ public class ShellActivity extends Activity {
 		try {
 			Process process = runCommand(command);
 
-			StreamGrabber errorGobbler = new StreamGrabber(
+			StreamGrabber errorGrabber = new StreamGrabber(
 					process.getErrorStream(), error, uiHandler);
-			StreamGrabber outputGobbler = new StreamGrabber(
+			StreamGrabber outputGrabber = new StreamGrabber(
 					process.getInputStream(), output, uiHandler);
 
-			errorGobbler.start();
-			outputGobbler.start();
+			errorGrabber.start();
+			outputGrabber.start();
 
 			int exitVal = process.waitFor();
 			setExitCode(exitVal);
@@ -134,7 +134,7 @@ public class ShellActivity extends Activity {
 			break;
 			
 		case R.id.action_su_whoami:
-			executeCommand(Command.WHOAMI);
+			executeCommand(Command.SU_WHOAMI);
 			break;
 
 		case R.id.action_wifi:
